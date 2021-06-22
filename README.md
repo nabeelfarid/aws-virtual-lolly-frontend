@@ -1,3 +1,10 @@
+- Demo Url: http://.cloudfront.net/
+- Frontend Repo: https://github.com/nabeelfarid/aws-virtual-lolly-frontend
+- Backend Repo: https://github.com/nabeelfarid/aws-virtual-lolly-backend
+- Frontend Pipeline Repo: https://github.com/nabeelfarid/aws-virtual-lolly-frontend-pipeline
+
+##
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />

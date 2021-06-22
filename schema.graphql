@@ -1,0 +1,24 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Lolly {
+  colorBottom: String!
+  colorMiddle: String!
+  colorTop: String!
+  from: String!
+  id: ID!
+  message: String!
+  to: String!
+}
+
+type Mutation {
+  createLolly(colorBottom: String!, colorMiddle: String!, colorTop: String!, from: String!, message: String!, to: String!): Lolly!
+  triggerWebsiteRebuild: Boolean!
+}
+
+type Query {
+  getLollies: [Lolly!]!
+  getLolly(id: String!): Lolly
+}
