@@ -10,7 +10,7 @@ module.exports = {
     description: `A place to grab a virtual Lolly because we all know someone who deserves some sugar.`,
     author: `Nabeel`,
     repo: "https://github.com/nabeelfarid/aws-virtual-lolly-frontend",
-    siteUrl: process.env.SITE_URL,
+    siteUrl: process.env.GATSBY_SITE_URL,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
