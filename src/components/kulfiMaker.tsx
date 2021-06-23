@@ -50,7 +50,8 @@ const KulfiMaker: React.FC<KulfiMakerProps> = (props) => {
     fetchLolly();
   }, []);
 
-  if (error || !props.id) {
+  console.log(loading, data);
+  if (error || !props.id || (!loading && data && !data.getLolly)) {
     return <KulfiNotFound />;
   }
   return (
@@ -61,7 +62,7 @@ const KulfiMaker: React.FC<KulfiMakerProps> = (props) => {
             <CircularProgress color="secondary" />
           </div>
         )}
-        {data && (
+        {data && data.getLolly && (
           <>
             <KulfiCard siteUrl={siteUrl} data={data.getLolly} />
           </>
