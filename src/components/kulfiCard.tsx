@@ -7,8 +7,9 @@ import {
   Typography,
   CardContent,
   Divider,
+  Link,
 } from "@material-ui/core";
-import { Link } from "gatsby-theme-material-ui";
+import { Link as GatsbyLink } from "gatsby-theme-material-ui";
 
 interface KulfiCardProps {
   data: {
@@ -47,7 +48,7 @@ const KulfiCard: React.FC<KulfiCardProps> = ({ data, siteUrl }) => {
             <Card variant="elevation">
               <CardContent>
                 <Typography variant="h6" gutterBottom>
-                  <Link color="primary" to={`/lolly/${data.id}`}>
+                  <Link color="primary" href={`/lolly/${data.id}`}>
                     {`${siteUrl}/lolly/${data.id}`}
                   </Link>
                 </Typography>
@@ -78,9 +79,9 @@ const KulfiCard: React.FC<KulfiCardProps> = ({ data, siteUrl }) => {
             <Typography variant="body2" color="textSecondary">
               {`${data.from} prepared this virtual lolly for
                     you. You can `}
-              <Link color="secondary" to="/create">
+              <GatsbyLink color="secondary" to="/create">
                 prepare your own
-              </Link>
+              </GatsbyLink>
               {` to send to a friend who deserve some sugary
                     treat which won't rot their teeth...`}
             </Typography>
